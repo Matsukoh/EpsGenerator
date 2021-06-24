@@ -1,0 +1,8 @@
+WindowLayout:
+    CustomSpinner:
+        size_hint: None, None
+        size: 200, 50
+        pos_hint: {'center': (0.5, 0.9)}
+        text: '512'
+        values: '256', '512', '1024'
+        on_text: root._change_export_format(self.text)
