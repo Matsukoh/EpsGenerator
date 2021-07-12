@@ -11,8 +11,6 @@ import numpy as np
 from time import time
 
 from PIL import Image
-from svglib.svglib import svg2rlg
-from reportlab.graphics import renderPDF, renderPS
 import cairosvg
 import os
 from kivy.uix.popup import Popup
