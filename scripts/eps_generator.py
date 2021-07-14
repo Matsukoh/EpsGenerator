@@ -97,7 +97,7 @@ class DragAndDropFileImporter(Widget):
                         img.save(export_path + file_name + ".eps",  loss_less=True)
             else:
                 if image_format == "svg":
-                    cairosvg.svg2pdf(url=str(file_path).split("b")[-1], write_to=export_path + file_name + ".eps")
+                    cairosvg.svg2ps(bytestring=open(file_path).read().encode('utf-8'), write_to=export_path + file_name + ".eps")
         except:
             self._error_popup()
         return
